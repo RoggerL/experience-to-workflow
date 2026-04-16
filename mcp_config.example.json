@@ -1,0 +1,63 @@
+{
+  "_comment": "MCP configuration examples for different clients. Replace <repo-path> with the actual path to your expforge clone.",
+  "claude_desktop_python": {
+    "mcpServers": {
+      "expforge": {
+        "command": "python",
+        "args": [
+          "<repo-path>/mcp_server.py"
+        ],
+        "description": "ExpForge - experience to workflow and knowledge base (Python)"
+      }
+    }
+  },
+  "claude_desktop_typescript": {
+    "mcpServers": {
+      "expforge": {
+        "command": "node",
+        "args": [
+          "<repo-path>/dist/mcp-server.js"
+        ],
+        "description": "ExpForge - experience to workflow and knowledge base (TypeScript)"
+      }
+    }
+  },
+  "cursor_python": {
+    "mcpServers": {
+      "expforge": {
+        "command": "python",
+        "args": [
+          "<repo-path>/mcp_server.py"
+        ]
+      }
+    }
+  },
+  "cursor_typescript": {
+    "mcpServers": {
+      "expforge": {
+        "command": "node",
+        "args": [
+          "<repo-path>/dist/mcp-server.js"
+        ]
+      }
+    }
+  },
+  "generic_stdio_python": {
+    "name": "expforge-python",
+    "transport": "stdio",
+    "command": "python",
+    "args": [
+      "<repo-path>/mcp_server.py"
+    ],
+    "env": {}
+  },
+  "generic_stdio_typescript": {
+    "name": "expforge-typescript",
+    "transport": "stdio",
+    "command": "node",
+    "args": [
+      "<repo-path>/dist/mcp-server.js"
+    ],
+    "env": {}
+  }
+}

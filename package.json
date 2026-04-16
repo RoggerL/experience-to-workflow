@@ -1,0 +1,25 @@
+{
+  "name": "expforge",
+  "version": "1.0.0",
+  "description": "Experience to workflow and knowledge base",
+  "type": "module",
+  "main": "dist/mcp-server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx ts/mcp-server.ts",
+    "start": "node dist/mcp-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mcp", "knowledge-base", "workflow", "experience"],
+  "author": "RoggerL",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
